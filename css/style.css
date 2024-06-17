@@ -163,41 +163,40 @@ h6 {
     margin-right: 65px;
 }
 
-/* Секция попробуй сейчас */
-.try-now {
+/* Секция приветствия */
+.welcome {
     margin-top: 32px;
-    margin-bottom: 18px;
     display: flex;
     justify-content: space-between;
 }
 
-.try-now-wrapper {
+.welcome-wrapper {
     padding-top: 129px;
     padding-bottom: 129px;
 }
 
-.try-now-wrapper h1 {
+.welcome-wrapper h1 {
     font-weight: 700;
     font-size: 80px;
     line-height: 110%;
     color: #12100c;
 }
 
-.try-now-wrapper>p {
+.welcome-wrapper>p {
     margin-top: 32px;
     font-size: 23px;
     line-height: 139%;
     color: rgba(18, 16, 12, 0.7);
 }
 
-.try-now-button {
+.welcome-button {
     margin-top: 48px;
     display: flex;
     align-items: center;
     gap: 24px;
 }
 
-.try-now-button a {
+.welcome-button a {
     display: block;
     display: flex;
     justify-content: center;
@@ -213,13 +212,41 @@ h6 {
     color: #12100c;
 }
 
-.try-now-button p {
+.welcome-button p {
     line-height: 150%;
     color: rgba(18, 16, 12, 0.7);
 }
 
-.try-now-logos {
+.welcome-logos {
     margin-top: 16px;
     display: flex;
     gap: 28px;
+}
+
+/* Информационная секция */
+.info {
+    margin-top: 18px;
+}
+
+.info-text {
+    padding-top: 160px;
+    padding-bottom: 160px;
+}
+
+.info-text-bold {
+    display: block;
+    font-weight: 700;
+    font-size: 54px;
+    line-height: 118%;
+    text-align: center;
+    color: #12100c;
+}
+
+.info-text-cross {
+    display: block;
+    font-size: 54px;
+    line-height: 118%;
+    text-decoration: line-through;
+    text-align: center;
+    color: #999795;
 }
