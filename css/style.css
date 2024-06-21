@@ -163,6 +163,7 @@ h6 {
     margin-right: 65px;
 }
 
+/* ГЛАВНАЯ СТРАНИЦА */
 /* Секция приветствия */
 .welcome {
     margin-top: 32px;
@@ -223,17 +224,17 @@ h6 {
     gap: 28px;
 }
 
-/* Информационная секция */
-.info {
+/* Секция про упрощение */
+.simplification {
     margin-top: 18px;
 }
 
-.info-text {
+.simplification-text {
     padding-top: 160px;
     padding-bottom: 160px;
 }
 
-.info-text-bold {
+.simplification-text-bold {
     display: block;
     font-weight: 700;
     font-size: 54px;
@@ -242,11 +243,147 @@ h6 {
     color: #12100c;
 }
 
-.info-text-cross {
+.simplification-text-cross {
     display: block;
     font-size: 54px;
     line-height: 118%;
     text-decoration: line-through;
     text-align: center;
     color: #999795;
+}
+
+/* Секция про предварительную сборку */
+.prebuild {
+    margin-top: 18px;
+    padding-top: 160px;
+    padding-bottom: 160px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 66px;
+}
+
+.prebuild-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 155px;
+}
+
+.prebuild-text h4 {
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 125%;
+    color: #12100c;
+}
+
+.prebuild-text p {
+    padding-top: 8px;
+    font-size: 24px;
+    line-height: 133%;
+    color: rgba(18, 16, 12, 0.7);
+}
+
+.prebuild-buttons {
+    display: flex;
+    gap: 16px;
+}
+
+.prebuild-buttons a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.1);
+    ;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 114%;
+    color: #12100c;
+}
+
+.prebuild-btn-more {
+    width: 162px;
+    height: 32px;
+    background: #ffae33;
+}
+
+.prebuild-btn-doc {
+    width: 146px;
+    height: 32px;
+    background: #ffb0ae;
+}
+
+/* Секция про удаленную разработку */
+.remote-gitpod {
+    margin-top: 177px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 48px
+}
+
+.remote-gitpod h2 {
+    font-weight: 700;
+    font-size: 54px;
+    line-height: 133%;
+    text-align: center;
+    color: #12100c;
+}
+
+.remote-gitpod-img {
+    display: flex;
+    justify-content: center;
+}
+
+.remote-gitpod-img img {
+    padding: 0 21px;
+    border-radius: 14px;
+    box-shadow: -2px 2px 15px 8px rgba(255, 138, 0, 0.4);
+}
+
+.remote-gitpod p {
+    font-size: 24px;
+    line-height: 133%;
+    text-align: center;
+    color: rgba(18, 16, 12, 0.7);
+}
+
+.remote-gitpod-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+}
+
+.remote-gitpod-buttons a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #000;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 177%;
+    color: #12100c;
+}
+
+.remote-gitpod-btn-chrome {
+    width: 207px;
+    height: 47px;
+}
+
+.remote-gitpod-btn-firefox {
+    width: 199px;
+    height: 47px;
+}
+
+.remote-gitpod-btn-chrome::before {
+    content: url('../img/google.png');
+    padding-top: 7px;
+    padding-right: 10px;
+}
+
+.remote-gitpod-btn-firefox::before {
+    content: url('../img/firefox.png');
+    padding-top: 7px;
+    padding-right: 10px;
 }
