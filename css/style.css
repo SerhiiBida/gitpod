@@ -355,15 +355,22 @@ h6 {
     gap: 16px;
 }
 
+/* Острые черные углы кнопок */
 .remote-gitpod-buttons a {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border: 1px solid #000;
+    display: block;
     font-weight: 700;
     font-size: 18px;
     line-height: 177%;
     color: #12100c;
+    border: 1px solid #12100c;
+}
+
+.remote-gitpod-buttons img {
+    margin-right: 10px;
+}
+
+.remote-gitpod-wrapper {
+    position: relative;
 }
 
 .remote-gitpod-btn-chrome {
@@ -372,18 +379,293 @@ h6 {
 }
 
 .remote-gitpod-btn-firefox {
-    width: 199px;
+    width: 207px;
     height: 47px;
 }
 
-.remote-gitpod-btn-chrome::before {
-    content: url('../img/google.png');
-    padding-top: 7px;
-    padding-right: 10px;
+/* Внутренние скругление */
+.remote-gitpod-border-radius {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    border-radius: 9px;
+    box-shadow: 0 0px 2px 0 rgba(0, 0, 0, 0.1);
+    background: #fff;
+    z-index: 1;
 }
 
-.remote-gitpod-btn-firefox::before {
-    content: url('../img/firefox.png');
-    padding-top: 7px;
-    padding-right: 10px;
+/* Секция с отзывами */
+.reviews {
+    margin-top: 179px;
+}
+
+.reviews h2 {
+    font-weight: 700;
+    font-size: 54px;
+    line-height: 118%;
+    text-align: center;
+    color: #12100c;
+}
+
+.reviews-wrapper-message {
+    margin-top: 48px;
+    padding-top: 8px;
+    padding-bottom: 32px;
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    gap: 24px;
+}
+
+.reviews-message {
+    width: 384px;
+    background: #fff;
+    border-radius: 16px;
+    padding: 24px;
+}
+
+.reviews-message p {
+    line-height: 150%;
+    color: #12100c;
+}
+
+.reviews-message-start-text {
+    padding-bottom: 8px;
+}
+
+.reviews-message-user {
+    margin-top: 16px;
+    display: flex;
+    gap: 12px;
+}
+
+.reviews-message-user img {
+    width: 48px;
+    height: 48px;
+}
+
+.reviews-message-user h5 {
+    font-weight: 700;
+    line-height: 150%;
+    color: #12100c;
+}
+
+.reviews-message-user p {
+    margin-top: 8px;
+}
+
+.reviews-logos {
+    display: flex;
+    justify-content: center;
+}
+
+.reviews-wrapper-logos {
+    margin: 0 85px;
+    padding: 0 16px;
+    height: 246px;
+    width: 1140px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: end;
+    flex-wrap: wrap;
+    gap: 24px;
+}
+
+/* Секция "Начни сейчас" */
+.begin {
+    margin-top: 178px;
+    padding-bottom: 160px;
+}
+
+.begin-title {
+    font-weight: 700;
+    font-size: 54px;
+    line-height: 133%;
+    text-align: center;
+    color: #12100c;
+}
+
+.begin-wrapper {
+    margin-top: 48px;
+    display: flex;
+    justify-content: center;
+    gap: 26px;
+}
+
+.begin-connect {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 64px;
+    padding-top: 56px;
+    border-radius: 20px;
+    width: 642px;
+    height: 651px;
+    background: #fff;
+}
+
+.begin-connect-start-text h3 {
+    padding-bottom: 8px;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 125%;
+    text-align: center;
+    color: #12100c;
+}
+
+.begin-connect-start-text p {
+    font-size: 24px;
+    line-height: 133%;
+    text-align: center;
+    color: rgba(18, 16, 12, 0.7);
+}
+
+.begin-connect-buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    align-items: center;
+}
+
+.begin-connect-buttons a {
+    display: flex;
+    align-items: center;
+    border-radius: 12px;
+    width: 262px;
+    height: 46px;
+    box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.1);
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 114%;
+    color: #fff;
+}
+
+.begin-connect-btn-fox {
+    background: #fc6d26;
+}
+
+.begin-connect-btn-github {
+    background: #000;
+}
+
+.begin-connect-btn-bitbucket {
+    background: #2684ff;
+}
+
+.begin-connect-buttons img {
+    margin-left: 33px;
+    margin-right: 16px;
+}
+
+.begin-connect-end-text p {
+    font-size: 24px;
+    line-height: 133%;
+    text-align: center;
+    color: rgba(18, 16, 12, 0.7);
+}
+
+.begin-connect-gitpod {
+    display: flex;
+    justify-content: center;
+    margin-top: 6px;
+}
+
+.begin-connect-gitpod p {
+    border-radius: 12px;
+    width: 151px;
+    height: 31px;
+    background: #ffe4bc;
+}
+
+.begin-launch {
+    padding-top: 56px;
+    border-radius: 20px;
+    width: 642px;
+    height: 651px;
+    background: #fff;
+}
+
+.begin-launch h3 {
+    padding-bottom: 8px;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 125%;
+    text-align: center;
+    color: #12100c;
+}
+
+.begin-launch>p {
+    padding-bottom: 32px;
+    font-size: 23px;
+    line-height: 139%;
+    text-align: center;
+    color: rgba(18, 16, 12, 0.7);
+}
+
+.begin-launch-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    padding: 0 56px;
+}
+
+.begin-launch-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 12px;
+    background: #f9f9f9;
+    height: 56px;
+    padding-left: 16px;
+    padding-right: 12px;
+}
+
+.begin-launch-img {
+    display: flex;
+    font-size: 20px;
+    line-height: 100%;
+    text-align: center;
+    color: rgba(18, 16, 12, 0.7);
+}
+
+.begin-launch-img img {
+    margin-right: 16px;
+}
+
+.begin-launch-row a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 12px;
+    width: 143px;
+    height: 32px;
+    box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.1);
+    background: #12100c;
+    font-size: 14px;
+    line-height: 114%;
+    color: #fff;
+}
+
+/* Подвал сайта */
+.footer {
+    display: flex;
+    justify-content: center;
+}
+
+.footer-container {
+    width: 900px;
+    height: 428px;
+    padding: 48px 24px 0 24px;
+}
+
+.footer-wrapper {
+    display: flex;
+    justify-content: center;
+    gap: 171px;
 }
