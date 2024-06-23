@@ -113,9 +113,12 @@ h6 {
 
 /* Вверхнее меню */
 .header {
+    position: sticky;
+    top: 0;
     height: 80px;
     padding-left: 32px;
     padding-right: 32px;
+    backdrop-filter: blur(16px);
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -130,6 +133,10 @@ h6 {
 .header-navbar a {
     line-height: 150%;
     color: rgba(18, 16, 12, 0.7);
+}
+
+.header-navbar a:hover {
+    color: #000;
 }
 
 .header-button-login {
@@ -183,7 +190,7 @@ h6 {
     color: #12100c;
 }
 
-.welcome-wrapper>p {
+.welcome-text {
     margin-top: 32px;
     font-size: 23px;
     line-height: 139%;
