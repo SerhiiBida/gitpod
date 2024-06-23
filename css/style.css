@@ -702,6 +702,13 @@ h6 {
     gap: 8px;
 }
 
+.footer-gitpod a:hover,
+.footer-developer a:hover,
+.footer-company a:hover,
+.footer-legal a:hover {
+    color: #000;
+}
+
 .footer-container hr {
     width: 852px;
     border: 1px solid #ece7e5;
@@ -741,13 +748,13 @@ h6 {
     background: #ece7e5;
 }
 
-.footer-cookies-text span {
+.footer-cookies-policy {
     text-decoration: underline;
     text-decoration-skip-ink: none;
     color: rgba(18, 16, 12, 0.59);
 }
 
-.footer-cookies a {
+.footer-cookies-accept {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -756,4 +763,8 @@ h6 {
     height: 32px;
     background: #f9f9f9;
     color: rgba(18, 16, 12, 0.7);
+}
+
+.footer-cookies-accept:hover {
+    color: #000;
 }
