@@ -653,19 +653,100 @@ h6 {
 }
 
 /* Подвал сайта */
-.footer {
+.footer-container {
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    background: #f9f9f9;
 }
 
-.footer-container {
+.footer-content {
     width: 900px;
-    height: 428px;
-    padding: 48px 24px 0 24px;
+    height: 412px;
+    padding: 48px 24px 32px 24px;
 }
 
 .footer-wrapper {
+    margin-bottom: 47px;
     display: flex;
     justify-content: center;
     gap: 171px;
+}
+
+.footer-wrapper h5 {
+    font-weight: 700;
+    font-size: 13px;
+    line-height: 150%;
+    color: #12100c;
+}
+
+.footer-wrapper a {
+    font-size: 13px;
+    line-height: 150%;
+    color: rgba(18, 16, 12, 0.7);
+}
+
+.footer-gitpod,
+.footer-developer,
+.footer-company,
+.footer-legal {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.footer-container hr {
+    width: 852px;
+    border: 1px solid #ece7e5;
+}
+
+.footer-logos {
+    padding-top: 33px;
+    width: 852px;
+    height: 57px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer-logos-gitpod {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 13px;
+    line-height: 150%;
+    color: rgba(18, 16, 12, 0.7);
+}
+
+.footer-logos-others {
+    display: flex;
+    gap: 16px;
+}
+
+.footer-cookies {
+    padding: 0 16px 0 16px;
+    height: 48px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    line-height: 150%;
+    color: rgba(18, 16, 12, 0.7);
+    background: #ece7e5;
+}
+
+.footer-cookies-text span {
+    text-decoration: underline;
+    text-decoration-skip-ink: none;
+    color: rgba(18, 16, 12, 0.59);
+}
+
+.footer-cookies a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 8px;
+    width: 163px;
+    height: 32px;
+    background: #f9f9f9;
+    color: rgba(18, 16, 12, 0.7);
 }
