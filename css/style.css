@@ -533,7 +533,7 @@ h6 {
     align-items: center;
 }
 
-.begin-connect-buttons a {
+.begin-connect-buttons button {
     display: flex;
     align-items: center;
     border-radius: 12px;
@@ -638,7 +638,7 @@ h6 {
     margin-right: 16px;
 }
 
-.begin-launch-row a {
+.begin-launch-row button {
     display: flex;
     justify-content: center;
     align-items: center;
